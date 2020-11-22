@@ -1,12 +1,16 @@
 <template>
     <div id="sidebar">
-        'Filters'
+        <Filters />
+        <button>Add movie</button>
     </div>
 </template>
 
 <script>
+import Filters from './Filters'
 export default {
-
+    components: {
+        Filters
+    }
 }
 </script>
 
@@ -25,7 +29,7 @@ export default {
 		& > button {
 			margin-top: 20px;
 			height: 30px;
-			background-color: #5eb85e;
+			background-color: #28B896;
 			border: none;
 			text-transform: uppercase;
 			font-weight: 600;
